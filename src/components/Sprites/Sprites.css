@@ -1,0 +1,11 @@
+.pokemon-table {
+  background: url(table-pokemon-type-sprite.PNG) no-repeat;
+  background-size: 612%;
+  border: 2px solid #ccc;
+}
+
+.type--agua {
+  width: 10rem;
+  height: 12rem;
+  background-position: -51rem -24.5rem;
+}
