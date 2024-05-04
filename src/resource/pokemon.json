@@ -101,79 +101,101 @@
         ]  
       },
       {
-        "tipo":"agua",
+        "tipo":"lucha",
         "relacion":[
           { 
-            "eficaz":["fuego", "roca","tierra"],
-            "debil":["dragon","agua","planta"],
-            "vulnerable":["electrico","planta"],
+            "eficaz":["normal"],
+            "debil":["bicho","fantasma","hada","psiquico","veneno","volador"],
+            "vulnerable":["hada","psiquico","volador"],
+            "inmune":["fantasma"]
+          }
+        ]  
+      },
+      {
+        "tipo":"normal",
+        "relacion":[
+          { 
+            "eficaz":["ninguno"],
+            "debil":["acero","fantasma","roca"],
+            "vulnerable":["lucha"],
+            "inmune":["fantasma"]
+          }
+        ]  
+      },
+      {
+        "tipo":"planta",
+        "relacion":[
+          { 
+            "eficaz":["agua","roca","tierra"],
+            "debil":["acero","bicho","fuego","dragon","planta","volador","veneno"],
+            "vulnerable":["bicho","fuego","hielo","veneno","volador"],
             "inmune":["ninguno"]
           }
         ]  
       },
       {
-        "tipo":"bicho",
+        "tipo":"psiquico",
         "relacion":[
           { 
-            "eficaz":["planta", "psiquico","siniestro"],
-            "debil":["acero","fantasma","fuego","hada","lucha","volador","veneno"],
-            "vulnerable":["fuego","roca","volador"],
+            "eficaz":["lucha","veneno"],
+            "debil":["acero","psiquico","siniestro"],
+            "vulnerable":["bicho","fantasma","siniestro"],
+            "inmune":["siniestro"]
+          }
+        ]  
+      },
+      {
+        "tipo":"roca",
+        "relacion":[
+          { 
+            "eficaz":["bicho", "fuego","hielo","volador"],
+            "debil":["acero","lucha","tierra"],
+            "vulnerable":["acero","agua","lucha","planta","tierra"],
             "inmune":["ninguno"]
           }
         ]  
       },
       {
-        "tipo":"dragon",
+        "tipo":"siniestro",
         "relacion":[
           { 
-            "eficaz":["dragon"],
-            "debil":["hada","acero"],
-            "vulnerable":["dragon","hada","hielo"],
+            "eficaz":["fantasma", "psiquico"],
+            "debil":["hada","lucha","siniestro"],
+            "vulnerable":["bicho","hada","lucha"],
             "inmune":["ninguno"]
           }
         ]  
       },
       {
-        "tipo":"electrico",
+        "tipo":"tierra",
         "relacion":[
           { 
-            "eficaz":["agua","volador"],
-            "debil":["dragon","electrico","planta","tierra"],
-            "vulnerable":["tierra"],
+            "eficaz":["acero", "roca","electrico","fuego","veneno"],
+            "debil":["bicho","volador","planta"],
+            "vulnerable":["agua","hielo","planta"],
+            "inmune":["electrico"]
+          }
+        ]  
+      },
+      {
+        "tipo":"veneno",
+        "relacion":[
+          { 
+            "eficaz":["hada", "planta"],
+            "debil":["acero","fantasma","roca","tierra","veneno"],
+            "vulnerable":["psiquico","tierra"],
             "inmune":["ninguno"]
           }
         ]  
       },
       {
-        "tipo":"fantasma",
+        "tipo":"volador",
         "relacion":[
           { 
-            "eficaz":["fantasma", "volador"],
-            "debil":["normal","siniestro"],
-            "vulnerable":["fantasma","siniestro"],
-            "inmune":["lucha","normal"]
-          }
-        ]  
-      },
-      {
-        "tipo":"agua",
-        "relacion":[
-          { 
-            "eficaz":["fuego", "roca","tierra"],
-            "debil":["dragon","agua","planta"],
-            "vulnerable":["electrico","planta"],
-            "inmune":["ninguno"]
-          }
-        ]  
-      },
-      {
-        "tipo":"agua",
-        "relacion":[
-          { 
-            "eficaz":["fuego", "roca","tierra"],
-            "debil":["dragon","agua","planta"],
-            "vulnerable":["electrico","planta"],
-            "inmune":["ninguno"]
+            "eficaz":["bicho", "lucha","planta"],
+            "debil":["acero","electrico","roca"],
+            "vulnerable":["electrico","hielo","roca"],
+            "inmune":["tierra"]
           }
         ]  
       }
