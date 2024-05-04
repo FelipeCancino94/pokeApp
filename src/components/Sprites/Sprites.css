@@ -2,10 +2,78 @@
   background: url(table-pokemon-type-sprite.PNG) no-repeat;
   background-size: 612%;
   border: 2px solid #ccc;
+  width: 10rem;
+  height: 12rem;
+}
+
+.type--bicho {
+  background-position: 0 0;
+}
+
+.type--siniestro {
+  background-position: -10.5rem 0;
+}
+
+.type--dragon {
+  background-position: -20.5rem 0;
+}
+
+.type--electrico {
+  background-position: -30.5rem 0;
+}
+
+.type--hada {
+  background-position: -40.5rem 0;
+}
+
+.type--lucha {
+  background-position: -51rem 0;
+}
+
+.type--fuego {
+  background-position: 0rem -12.5rem;
+}
+
+.type--volador {
+  background-position: -10.5rem -12.5rem;
+}
+
+.type--fantasma {
+  background-position: -20.5rem -12.5rem;
+}
+
+.type--planta {
+  background-position: -30.5rem -12.5rem;
+}
+
+.type--tierra {
+  background-position: -40.5rem -12.5rem;
+}
+
+.type--hielo {
+  background-position: -51rem -12.5rem;
+}
+
+.type--normal {
+  background-position: 0 -24.5rem;
+}
+
+.type--veneno {
+  background-position: -10.5rem -24.5rem;
+}
+
+.type--psiquico {
+  background-position: -20.5rem -24.5rem;
+}
+
+.type--roca {
+  background-position: -30.5rem -24.5rem;
+}
+
+.type--acero {
+  background-position: -40.5rem -24.5rem;
 }
 
 .type--agua {
-  width: 10rem;
-  height: 12rem;
   background-position: -51rem -24.5rem;
 }
