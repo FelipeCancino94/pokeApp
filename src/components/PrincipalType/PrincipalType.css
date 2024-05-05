@@ -1,0 +1,74 @@
+
+.principal_type {
+    display: grid;
+    grid-template-columns: 10rem 30rem;
+    margin: 10px;
+    gap: 10px; 
+}
+.pokemon-datos{
+    border:2px solid #ccc;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 10rem auto;
+    grid-template-rows: 4;
+    gap: 10px;
+}
+
+.title-eficaz{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(59, 170, 59) ;
+}
+.title-debil{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    font-size: 1.5rem;
+    color: red ;
+}
+.title-vulnerable{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(2, 149, 207) ;
+}
+.title-inmune{
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(154, 151, 151) ;
+}
+
+.pokemon-eficaz{
+    margin: 0.5rem;
+    background-color: rgb(59, 170, 59);
+    border-radius: 2px;
+    grid-column-start: 2;
+    grid-row: 1;
+}
+.pokemon-debil{
+    margin: 0.5rem;
+    background-color: red;
+    border-radius: 2px;
+    grid-column-start: 2;
+    grid-row: 2;
+}
+.pokemon-vulnerable{
+    margin: 0.5rem;
+    background-color: rgb(2, 149, 207);
+    border-radius: 2px;
+    grid-column-start: 2;
+    grid-row: 3;
+}
+.pokemon-inmune{
+    margin: 0.5rem;
+
+    background-color: rgb(154, 151, 151);
+    border-radius: 2px;
+    grid-column-start: 2;
+    grid-row: 4;
+}
