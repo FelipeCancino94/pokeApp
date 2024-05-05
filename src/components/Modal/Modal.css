@@ -1,0 +1,34 @@
+.modal {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+}
+
+.modal .options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.modal .options .pokemon-table {
+  cursor: pointer;
+  border: 0;
+}

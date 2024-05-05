@@ -4,6 +4,7 @@
   border: 2px solid #ccc;
   width: 10rem;
   height: 12rem;
+  cursor: pointer;
 }
 
 .type--bicho {
