@@ -1,4 +1,5 @@
 import '../Sprites/Sprites.css';
+import './PrincipalType.css';
 
 const PrincipalType = ({ selectedType, updateStateModal, activeTypeRelations }) => {
   function openModal() {
@@ -6,24 +7,58 @@ const PrincipalType = ({ selectedType, updateStateModal, activeTypeRelations }) 
   }
 
   return (
-    <>
-      <div className="principal_type">
+    <div className="principal_type">
         <div className={`pokemon-table type--${selectedType}`} onClick={() => { openModal() }}></div>
         <div className="tabla-relacion">
-          <p>Tipo</p>
-          <p>{ activeTypeRelations.tipo }</p>
-          <p>Eficaz</p>
-          <ul>
+          <p className='title-tabla title--eficaz' >Eficaz</p>
+          <span className='pokemon-type-background pokemon-eficaz'>
             {
               activeTypeRelations.relacion[0].eficaz.map(type => {
-                return <li key={type}><div className={`pokemon-table type--${type}`}></div></li>
+                return <div key={type} className={`pokemon-img pokemon-table type--${type}`} ></div>
               })
             }
-          </ul>
+          </span>
+          <p className='title-tabla title--debil' >Debil</p>
+          <span className='pokemon-type-background pokemon-debil'>
+            {
+              activeTypeRelations.relacion[0].debil.map(type => {
+                return <div key={type} className={`pokemon-img pokemon-table type--${type}`} ></div>
+              })
+            }
+          </span>
+          <p className='title-tabla title--vulnerable' >Vulnerablel</p>
+          <span className='pokemon-type-background pokemon-vulnerable'>
+            {
+              activeTypeRelations.relacion[0].vulnerable.map(type => {
+                return <div key={type} className={`pokemon-img pokemon-table type--${type}`} ></div>
+              })
+            }
+          </span>
+          <p className='title-tabla title--inmune' >Inmune</p>
+          <span className='pokemon-type-background pokemon-inmune'>
+            {
+              activeTypeRelations.relacion[0].inmune.map(type => {
+                return <div key={type} className={`pokemon-img pokemon-table type--${type}`} ></div>
+              })
+            }
+          </span>
+
         </div>
-      </div>
-    </>
+      
+  
+      {/*   
+        <div>
+          <p className='pokemon-title-type'>Eficaz</p>
+          <span className='pokemon-vulnerable'></span>
+        </div>
+        <div>
+          <p className='pokemon-title-type'>Eficaz</p>
+          <span className='pokemon-inmune'></span>
+        </div> */}
+
+    </div>
   );
 };
+
 
 export { PrincipalType };

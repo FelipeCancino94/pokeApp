@@ -4,6 +4,8 @@
   border: 2px solid #ccc;
   width: 10rem;
   height: 12rem;
+  align-self: center;
+  border-radius: 10px 0 10px 0;
   cursor: pointer;
 }
 
