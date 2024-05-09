@@ -6,7 +6,6 @@
     gap: 10px; 
 }
 .tabla-relacion{
-    border:2px solid #ccc;
     grid-column: 2;
     display: grid;
     grid-template-columns: 10rem auto;
@@ -16,7 +15,7 @@
 .title-tabla {
     text-align: center;
     align-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .title--eficaz{
     grid-column: 1;
@@ -40,7 +39,7 @@
 }
 .pokemon-type-background{
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0.5rem;
     border-radius: 2px;
 }
